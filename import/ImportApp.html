@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Import JSON</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+ 
+<body>
+  <div ng-app="ImportApp">
+    <div ng-controller="ImportController">
+      <div class="container-fluid" >
+	    <div class="well">
+          <button type="button" id="import" title="Import Genres from NewYorkTimes" class="btn btn-default" ng-click="importGenres();">
+            <span class="glyphicon glyphicon-share" aria-hidden="true"></span>Import Genres
+          </button>
+	    </div>
+	    <div class="well">
+	      {{response}}
+	    </div>
+      </div>
+    </div> <!--controller-->
+  </div> <!--mainapp-->	
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+  <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="import.js"></script>
+</body>
+</html>
